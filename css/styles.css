@@ -181,12 +181,13 @@ ul {
 /*hero image*/
 
 .hero-section{
+    background-color: var(--accent-color-logo-grunt);
     padding-bottom: 192px;
     padding-top: 192px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 1440px;
 }
 
 .hero-image{    
