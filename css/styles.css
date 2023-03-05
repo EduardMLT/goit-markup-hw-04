@@ -14,6 +14,7 @@
     --color-tmp-brdr: #transparent ;
     --color-customers-ikons: #8e8f99;
     --color-footer-social-ikons: #f4f4fd;
+    --color-footer-social-ikons-grunt-a:  rgba(255, 255, 255, 0.1);
     --color-footer-social-ikons-grunt: #31d0aa;
 }
 
@@ -180,9 +181,12 @@ ul {
 /*hero image*/
 
 .hero-section{
-    background: var(--accent-color-logo-grunt);
     padding-bottom: 192px;
     padding-top: 192px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(/images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-image{    
@@ -292,6 +296,8 @@ ul {
 
 .ourteam-item-grunt{
     background: var(--main-title-color);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;;
 }
 
 .ourteam-block-man{
@@ -367,7 +373,7 @@ ul {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--accent-color-logo-grunt);
     margin-bottom: 72px;
 }
 
@@ -444,7 +450,7 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #FFFFFF;
+    color: var(--main-title-color);
     margin-bottom: 16px;
 
 }
@@ -469,18 +475,18 @@ ul {
     width: 100%;
     height: 100%; 
     border-radius: 50%;
-    background-color: var(--color-button-link);
+    background-color: var(--color-footer-social-ikons-grunt-a);
     color: var(--color-footer-social-ikons);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus{
     background-color: var(--color-footer-social-ikons-grunt);
-    color: #2E2F42;
+    color: var(--accent-color-logo-grunt);
 }
 
 .footer-social-icon{
-    fill: currentColor;
+   fill: currentColor;
     width: 24px;
     height: 24px;
 }
@@ -492,7 +498,6 @@ ul {
 .prtf-filtr{
     margin-bottom: 72px;
     justify-content: center;
-      
 }
 
 .prtf-block{
@@ -524,6 +529,8 @@ ul {
 .prtf-button-grunt:focus{
     background: var(--color-button-link);
     color: var(--ourteam-grunt-foto);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
 }
 
 .prtf-button-grunt{
@@ -544,6 +551,12 @@ ul {
     box-shadow: var(--card-shadow);
     border-radius: 4px;
     overflow: hidden;   
+}
+
+.card:hover,
+.card:focus{
+    border: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
   .card-block-text{
