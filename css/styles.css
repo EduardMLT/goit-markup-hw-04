@@ -22,6 +22,7 @@
 
 .header-line{
     border-bottom: 1px solid var(--footer-text-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -116,6 +117,7 @@ ul {
 .header-section{
     padding-top: 24px;
     padding-bottom: 24px;
+    
 }
 
 .header-justify{
@@ -181,6 +183,9 @@ ul {
 /*hero image*/
 
 .hero-section{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--accent-color-logo-grunt);
     padding-bottom: 192px;
     padding-top: 192px;
@@ -283,7 +288,9 @@ ul {
 
 /*наша команда*/
 .ourteam-section{
-    padding-bottom: 130px;
+    padding-top: 120px;
+    padding-bottom: 110px;
+    background-color: var(--accent-color-logo);
 } 
 
 .ourteam-title{
@@ -349,16 +356,16 @@ ul {
 }
 
 .ourteam-social-icon{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
 }
 
 /*---- наші замовники ----*/
 
 .customers-section{
+    padding-top: 130px;
     padding-bottom: 120px;
-
 }
 
 .customers-list{
@@ -378,9 +385,10 @@ ul {
     margin-bottom: 72px;
 }
 
-/* .customers-item{
-   
-} */
+.customers-item{
+   border: 1px solid var(--color-customers-ikons);
+   border-radius: 4px;
+}
 
 .customers-link{
     display: flex;
@@ -399,6 +407,7 @@ ul {
 .customers-link:hover,
 .customers-link:focus{
     color: var(--color-button-link);
+    border: 1px solid var(--color-button-link)
 }
 
 .customers-icon{
@@ -549,19 +558,22 @@ ul {
 }
 
 .card{
-    box-shadow: var(--card-shadow);
-    border-radius: 4px;
-    overflow: hidden;   
+    
 }
 
-.card:hover,
+.card:hover, 
 .card:focus{
-    border: 1px solid #E7E9FC;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+} 
 
   .card-block-text{
     padding: 32px 0 32px 16px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden; 
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .cards-name{    
