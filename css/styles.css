@@ -15,7 +15,7 @@
     --color-customers-ikons: #8e8f99;
     --color-footer-social-ikons: #f4f4fd;
     --color-footer-social-ikons-grunt-a:  rgba(255, 255, 255, 0.1);
-    --color-footer-social-ikons-grunt: #31d0aa;
+    --color-footer-social-ikons-grunt: #31D0AA;
 }
 
 
@@ -55,6 +55,12 @@ h5,
 h6,
 p {
     margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 ul {
@@ -183,7 +189,7 @@ ul {
 /*hero image*/
 
 .hero-section{
-    width: 1440px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--accent-color-logo-grunt);
@@ -386,17 +392,13 @@ ul {
 }
 
 .customers-item{
-   border: 1px solid var(--color-customers-ikons);
-   border-radius: 4px;
+   
 }
 
 .customers-link{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: transparent; */
     color: var(--color-customers-ikons);
     border: 1px solid var(--color-customers-ikons);
     border-radius: 4px;
@@ -547,6 +549,7 @@ ul {
     color: var(--ourteam-grunt-foto);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    border-color: var(--color-button-link);
 }
 
 .prtf-button-grunt{
