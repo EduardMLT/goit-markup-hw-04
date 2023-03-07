@@ -442,6 +442,12 @@ ul {
 
 .footer-logo-color{
     color: var(--accent-color-logo);
+    font-family: 'Raleway' , sans-serif;    
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    text-decoration: none;
 }
 
 .footer-text-color{
@@ -557,9 +563,9 @@ ul {
     row-gap: 48px;
 }
 
-.card{
+/* .card{
     
-}
+} */
 
 .card:hover, 
 .card:focus{
